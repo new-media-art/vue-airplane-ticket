@@ -4,9 +4,9 @@
 
     <typical
       :steps="[
-      '',
+      '🌞 Yes!',
       5000,
-      'Hello!', 
+      'You made it!', 
       5000, 
       'Here is your airplane ticket!', 
       5000]"
@@ -63,10 +63,10 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  min-height: 200px;
   text-align: center;
   color: #2c3e50;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .typicalWrapper::after {
   content: "|";
