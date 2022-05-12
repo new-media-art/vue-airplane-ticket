@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    
+    <AirplaneTicketText />
+  
+    <AirplaneTicket />
+  
+    
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import AirplaneTicketText from '@/components/AirplaneTicketText.vue'; 
+import AirplaneTicket from '@/components/AirplaneTicket.vue'
 
 export default Vue.extend({
   name: 'HomeView',
   components: {
-    HelloWorld,
+    AirplaneTicketText,
+    AirplaneTicket
   },
 });
 </script>
+
+<style  scoped>
+
+</style>
