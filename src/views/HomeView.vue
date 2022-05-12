@@ -1,9 +1,13 @@
 <template>
   <div class="home">
+    <div id="text">
+      <AirplaneTicketText />
+    </div>
     
-    <AirplaneTicketText />
-  
+  <div>
     <AirplaneTicket />
+  </div>
+    
   
     
   </div>
@@ -24,5 +28,7 @@ export default Vue.extend({
 </script>
 
 <style  scoped>
-
+#text {
+  height: 20%;
+}
 </style>

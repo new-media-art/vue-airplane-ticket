@@ -1,24 +1,44 @@
 <template>
   <div id="app">
-    <img id="png" alt="Vue logo" src="../assets/earth-travel-illustration.png">
+    <img id="png" alt="Vue logo" src="../assets/airplane.png">
 
     <typical
-      :steps="['Hello!', 2000, 'Here is your airplane ticket!', 500]"
-    
+      :steps="[
+      '',
+      5000,
+      'Hello!', 
+      5000, 
+      'Here is your airplane ticket!', 
+      5000]"
+      :wrapper="'h1'"
     ></typical>
     <typical
       class="typicalWrapper"
       :steps="[
+        '',
+        9000,
+        ' : ) ',
+        1000,
+        'That is a great destination!!',
+        1000,
         'That is a great destination!!',
         1000,
         'Thank you for choosing Destination One!',
         500,
+        'Your pilot will be Danilo',
+        1000,
+        'Your co-pilot will be Mareike',
+        1000,
+        1000,
+        'Ulrich will be serving Gin Tonics all the way to your destination!',
+        1000,
         'Have a nice trip! Au revoir!! :-) 👋',
         1000,
       ]"
       :loop="Infinity"
-      :wrapper="'h3'"
+      :wrapper="'h2'"
     ></typical>
+    
   </div>
 </template>
 
@@ -35,17 +55,18 @@ export default {
 
 <style>
 #png {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  
 }
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .typicalWrapper::after {
   content: "|";
