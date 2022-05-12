@@ -4,7 +4,7 @@
 
     <typical
       :steps="['Hello!', 2000, 'Here is your airplane ticket!', 500]"
-      :wrapper="'h2'"
+    
     ></typical>
     <typical
       class="typicalWrapper"
