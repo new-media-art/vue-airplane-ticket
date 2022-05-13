@@ -45,16 +45,17 @@
 
   #bg {
   
-
-  width: 95%; 
+    
+  width: 100%; 
   height:100%;
-  margin:0em 5%;
+  margin:0em 0%;
   background-color:#8ec1da;
   background-image: url("~@/assets/airplane-ticket-clouds-bg.jpg"); 
+  background-size: cover;
   background-position: center bottom;
-  animation: animatedBackground 30s linear infinite;
+  animation: animatedBackground 20s linear infinite;
   /* Safari and Chrome: */
-  -webkit-animation: animatedBackground 30s linear infinite;
+  -webkit-animation: animatedBackground 20s linear infinite;
 }
 @keyframes animatedBackground 
 {
@@ -66,19 +67,6 @@
   from { background-position: 0 100%; }
   to { background-position: 100% 100%; }
 }
-#content
-{
-  position:fixed;
-  top:5em;
-  height:1em;
-  width:19em;
-  background-color:rgba(1,1,1,0.5);
-  color:white;
-  padding:2em;
-  border-bottom-right-radius: 5em;
-  -webkit-border-bottom-right-radius: 5em;
-   border-top-left-radius: 5em;
-  -webkit-border-top-left-radius: 5em;
-}
+
 
 </style>
