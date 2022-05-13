@@ -12,36 +12,36 @@
             <div class="ticket__id">
                 <h2>
                     <span class="material-icons">
-                        local_airport</span><span>Flight: 2022</span>
+                        local_airport</span><span>Flight: {{ flightNumber }} </span>
                 </h2>
 
             </div> <!-- end ticket id -->
             <div class="ticket__locations">
                 <div class="ticket__departure">
                     <div class="label label-icon"><span>Departing</span><span class="material-icons">flight_takeoff</span> </div>
-                    <div class="ticket__departure-airport">VIE</div>
-                    <div><span class="label">Time:</span> 10:25 a.m.</div>
+                    <div class="ticket__departure-airport">{{ ticketDeparture }}</div>
+                    <div><span class="label">Time:</span>{{ departureTime }}</div>
                 </div> <!-- end ticket departure -->
                 <div class="ticket__arrow"><span class="material-icons">
                         arrow_right_alt
                     </span></div>
                 <div class="ticket__arrival">
                     <div class="label label-icon label-arrival"><span class="material-icons">flight_land</span> Arriving</div>
-                    <div class="ticket__departure-airport">PMO</div>
-                    <div><span class="label">Time:</span> 1:05 p.m.</div>
+                    <div class="ticket__departure-airport"> {{ ticketArrival }}</div>
+                    <div><span class="label">Time:</span> {{ arrivalTime }}</div>
                 </div> <!-- end ticket arrival -->
             </div> <!-- end ticket locations -->
             <div class="ticket__board">
                 <div class="ticket__assignment">
                     <div class="ticket__seat">
                         <p><span class="label">Status:</span> <span class="ticket__status">Booked...</span></p>
-                        <p><span class="label">Gate:</span> B3</p>
-                        <p><span class="label">Seat:</span> 11E</p>
-                        <p><span class="label">Group:</span> 3</p>
+                        <p><span class="label">Gate:</span> {{ gate }} </p>
+                        <p><span class="label">Seat:</span> {{ seat }} </p>
+                        <p><span class="label">Group:</span> {{ group }} </p>
                     </div>
                     <section class="ticket__passenger">
                         <h2>
-                            <span class="material-icons">account_box</span> <span>Passenger: Danilo</span>
+                            <span class="material-icons">account_box</span> <span>Passenger: {{ passenger }} </span>
                         </h2>
                     </section>
                 </div> <!-- end ticket assignment -->
@@ -76,6 +76,17 @@ export default {
         
     },
     */
+   computed: {
+  flightNumber() { return this.$store.state.flightTicket.flight },
+  passenger() { return this.$store.state.flightTicket.passenger },
+  ticketDeparture() { return this.$store.state.flightTicket.ticketDeparture },
+  departureTime() { return this.$store.state.flightTicket.departureTime },
+  ticketArrival() { return this.$store.state.flightTicket.ticketArrival },
+  arrivalTime() { return this.$store.state.flightTicket.arrivalTime },
+  gate() { return this.$store.state.flightTicket.gate },
+  seat() { return this.$store.state.flightTicket.seat },
+  group() { return this.$store.state.flightTicket.group },
+}
 };
 </script>
 
