@@ -41,7 +41,7 @@
                     </div>
                     <section class="ticket__passenger">
                         <h2>
-                            <span class="material-icons">account_box</span> <span>Passenger: Danilo</span>
+                            <span class="material-icons">account_box</span> <span>Passenger: Abdalla</span>
                         </h2>
                     </section>
                 </div> <!-- end ticket assignment -->
@@ -113,6 +113,7 @@ html {
 	height: 100%;
 	display: grid;
 	font-family: "Roboto Condensed", sans-serif;
+	overflow: hidden;
     
 }
 

@@ -46,19 +46,22 @@
   #bg {
   
 
-  width: 95%; 
-  height:100%;
-  margin:0em 5%;
-  background-color:#8ec1da;
+  width: auto; 
+  height: 100%;
+  margin: 0%;
+
+  background-color:#5b99b9;
+ 
   background-image: url("~@/assets/airplane-ticket-clouds-bg.jpg"); 
   background-position: center bottom;
   animation: animatedBackground 30s linear infinite;
+ 
   /* Safari and Chrome: */
   -webkit-animation: animatedBackground 30s linear infinite;
 }
 @keyframes animatedBackground 
 {
-  from { background-position: 0 100%; }
+  from { background-position: -20 110%; }
   to { background-position: 100% 100%; }
 }
 @-webkit-keyframes  animatedBackground 

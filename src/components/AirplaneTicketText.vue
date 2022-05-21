@@ -65,8 +65,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   min-height: 200px;
   text-align: center;
-  color: #2c3e50;
+  color: #1c0261;
   margin-top: 20px;
+  
+  
 }
 .typicalWrapper::after {
   content: "|";
